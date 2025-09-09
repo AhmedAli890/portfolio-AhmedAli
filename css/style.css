@@ -1,0 +1,427 @@
+/* ===== Base ===== */
+body {
+    background: #303030;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #47C6F8;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0FF;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 300;
+  }
+  
+  /* ===== Navigation ===== */
+  .navbar-default {
+    background: #fff;
+    border: none;
+    margin: 0;
+  }
+  
+  .navbar-default .navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #28a7e9 !important;
+  }
+  
+  .navbar-default .navbar-nav li a {
+    font-weight: bold;
+    font-size: 13px;
+    color: #333 !important;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-default .navbar-nav li a:hover,
+  .navbar-default .navbar-nav li a.current {
+    color: #28a7e9 !important;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+  }
+  
+  /* ===== Home ===== */
+  #home {
+    background: url('../images/home-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 160px 0 100px;
+    min-height: 650px;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  #home h1 span {
+    color: #28a7e9;
+    font-weight: bold;
+  }
+  
+  #home .element {
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  #home .btn {
+    background: transparent;
+    border: 2px solid #28a7e9;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #home .btn:hover {
+    background: #28a7e9;
+    color: #fff;
+  }
+  
+  /* ===== Sections ===== */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #28a7e9;
+  }
+  
+  section p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* ===== Experience ===== */
+  /* Experience Section Styling */
+#experience .panel-body {
+    background: #404040;        /* نفس خلفية باقي البلوكات */
+    color: #f1f1f1;             /* نص فاتح */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  #experience .panel-body strong {
+    color: #28a7e9;             /* الأزرق الأساسي للـKeywords */
+  }
+  
+  #experience .panel-heading {
+    background: #333;           /* خلفية أغمق للعنوان */
+    color: #fff;
+  }
+  
+  #experience .panel-title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #experience .panel-title a:hover {
+    color: #28a7e9;
+  }
+  
+  
+  /* ===== Skills ===== */
+ /* ===== Skills Section ===== */
+.skill-box {
+  background: #404040;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-height: 200px;
+}
+.skill-box:hover {
+  background: #505050;
+  transform: translateY(-5px);
+}
+.skill-box i {
+  font-size: 36px;
+  color: #28a7e9;
+  margin-bottom: 12px;
+}
+.skill-box h4 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.skill-box p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+  
+  /* ===== Portfolio ===== */
+ /* ===== Portfolio Cards (DRT) ===== */
+#portfolio .project-card { margin-bottom: 20px; }
+#portfolio .project-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #222;
+}
+#portfolio .project-thumb img {
+  width: 100%;
+  display: block;
+  transition: transform .5s ease, opacity .5s ease;
+}
+#portfolio .project-thumb:hover img {
+  transform: scale(1.08);
+  opacity: .9;
+}
+
+#portfolio .project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(40,167,233,0.92); /* الأزرق الأساسي */
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+#portfolio .project-thumb:hover .project-overlay { opacity: 1; }
+
+#portfolio .project-overlay h4 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+#portfolio .project-tag {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .4px;
+  background: rgba(0,0,0,0.15);
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+#portfolio .project-overlay p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #eef7ff;
+}
+
+  
+  /* ===== Contact ===== */
+  #contact p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #contact i {
+    color: #28a7e9;
+    margin-right: 8px;
+  }
+  .wow { visibility: visible; will-change: opacity, transform; }
+  
+/* === Portfolio Cards (no filter) === */
+.project-card {
+  background: #404040;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+  margin-bottom: 20px;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.35);
+}
+.project-thumb img {
+  width: 100%;
+  display: block;
+}
+.project-meta {
+  padding: 14px 14px 16px;
+}
+.project-meta h4 {
+  margin: 0 0 4px;
+  font-weight: 700;
+  color: #fff;
+}
+.project-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #b7dff3;
+  margin-bottom: 10px;
+}
+.project-badges {
+  margin-bottom: 8px;
+}
+.project-badges span {
+  display: inline-block;
+  background: #2e2e2e;
+  color: #e8f6fc;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 0 6px 6px 0;
+}
+.project-desc {
+  margin: 0;
+  font-size: 13px;
+  color: #ddd;
+  line-height: 1.6;
+}
+/* ===== Portfolio Images Uniform Size ===== */
+.project-thumb {
+  width: 100%;
+  height: 220px; /* طول ثابت لكل الصور (غيّره حسب ذوقك: 200-300px) */
+  overflow: hidden;
+  border-radius: 6px 6px 0 0; /* يخلي الأطراف متناسقة مع الكارت */
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يخلي الصور تتمدد وتتقص بشكل أنيق */
+  display: block;
+}
+/* ===== Contact Section (Modern Style) ===== */
+#contact {
+  padding: 60px 0;
+  background: #303030;
+  color: #fff;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #28a7e9;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-card {
+  background: #404040;
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  border-color: #28a7e9;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.contact-card i {
+  font-size: 32px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-card h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #ddd;
+  word-break: break-all;
+}
+
+/* Colors per service */
+.contact-card[href^="tel"] i {
+  color: #25d366; /* WhatsApp/Phone green */
+}
+.contact-card[href^="mailto"] i {
+  color: #d44638; /* Gmail red */
+}
+.contact-card[href*="linkedin.com"] i {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ===== Navbar Modern Style ===== */
+/* ===== Modern Transparent Navbar ===== */
+.navbar {
+  background: rgba(255, 255, 255, 0.2); /* أبيض شفاف */
+  border: none;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95); /* أبيض شبه كامل عند النزول */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222 !important;
+  letter-spacing: 1px;
+}
+
+.navbar-nav > li > a {
+  color: #333 !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #28a7e9 !important;
+  border-bottom: 2px solid #28a7e9;
+  background: transparent !important;
+}
+
+/* Mobile Menu */
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  background-color: #333;
+}
